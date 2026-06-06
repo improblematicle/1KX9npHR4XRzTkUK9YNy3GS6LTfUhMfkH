@@ -3,321 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZafiSearch - Mencari Hal Baru</title>
-    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
-<!--
-
-TemplateMo 595 3d coverflow
-
-https://templatemo.com/tm-595-3d-coverflow
-
--->
+    <title>Gradient Wave Login Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <a href="#home" class="logo-container">
-            <div class="logo">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
-                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
-                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
-                </svg>
-            </div>
-            <div class="logo-text">dibuat dengan.. 3D Coverflow</div>
-        </a>
-        
-        <nav class="main-menu" id="mainMenu">
-            <a href="#home" class="menu-item active">Home</a>
-            <a href="#about" class="menu-item">About</a>
-            <a href="#contact" class="menu-item">Contact</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="menu-item external">GitHub</a>
-            <p id="userInfo">Belum login</p>
-        </nav>
-<div id="authArea">
-    <button onclick="goLogin() " class="nav-cta">Login</button>
-</div>
-        <div class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="coverflow-wrapper">
-            <div class="info">
-                <h2 id="current-title">Mountain Landscape</h2>
-                <p id="current-description">Majestic peaks covered in snow during golden hour</p>
-            </div>
-
-            <div class="coverflow-container" tabindex="0">
-                <div class="coverflow" id="coverflow">
-                    <div class="coverflow-item" data-index="0">
-                        <div class="cover image-loading">
-                            <img src="images/mountain-landscape.jpg" alt="Mountain Landscape" loading="lazy">
-                        </div>
-                        <div class="reflection"></div>
-                    </div>
-                    <div class="coverflow-item" data-index="1">
-                        <div class="cover image-loading">
-                            <img src="images/forest-path.jpg" alt="Forest Path" loading="lazy">
-                        </div>
-                        <div class="reflection"></div>
-                    </div>
-                    <div class="coverflow-item" data-index="2">
-                        <div class="cover image-loading">
-                            <img src="images/serene-water-mirroring.jpg" alt="Lake Reflection" loading="lazy">
-                        </div>
-                        <div class="reflection"></div>
-                    </div>
-                    <div class="coverflow-item" data-index="3">
-                        <div class="cover image-loading">
-                            <img src="images/ocean-sunset-golden-hour.jpg" alt="Ocean Sunset" loading="lazy">
-                        </div>
-                        <div class="reflection"></div>
-                    </div>
-                    <div class="coverflow-item" data-index="4">
-                        <div class="cover image-loading">
-                            <img src="images/rolling-sand-dunes.jpg" alt="Desert Dunes" loading="lazy">
-                        </div>
-                        <div class="reflection"></div>
-                    </div>
-                    <div class="coverflow-item" data-index="5">
-                        <div class="cover image-loading">
-                            <img src="images/starry-night.jpg" alt="Starry Night" loading="lazy">
-                        </div>
-                        <div class="reflection"></div>
-                    </div>
-                    <div class="coverflow-item" data-index="6">
-                        <div class="cover image-loading">
-                            <img src="images/cascading-waterfall.jpg" alt="Waterfall" loading="lazy">
-                        </div>
-                        <div class="reflection"></div>
-                    </div>
-                </div>
-
-                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
-                <button class="nav-button next" onclick="navigate(1)">›</button>
-
-                <div class="dots-container" id="dots"></div>
-                
-                <!-- Play/Pause Button -->
-                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
-                    <span class="play-icon">▶</span>
-                    <span class="pause-icon" style="display: none;">❚❚</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="about-content">
-            <div class="about-header">
-                <h2>Selamat Pagi! Gimana kabar anda?</h2>
-                <p>Perkenalkan, aku Zafiya Khairany Darmawan, mengerjakan di kelas 10!</p>
-            </div>
-            
-            <div class="about-main">
-                <div class="about-visual">
-                    <div class="showcase-display">
-                        <div class="showcase-main">
-                            <div class="corner-decoration top-left"></div>
-                            <div class="corner-decoration bottom-right"></div>
-                            
-                            <div class="showcase-logo">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="10" y="25" width="15" height="50" fill="white" transform="rotate(-15 17.5 50)" opacity="0.9" />
-                                    <rect x="35" y="15" width="15" height="70" fill="white" />
-                                    <rect x="60" y="25" width="15" height="50" fill="white" transform="rotate(15 67.5 50)" opacity="0.9" />
-                                    <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="2" opacity="0.3" />
-                                </svg>
-                            </div>
-                            
-                            <h3 class="showcase-title">Cara membuat?</h3>
-                            <p class="showcase-subtitle"> Pelajari melalui link dibawah ini </p>
-                            
-                            <div class="showcase-badges">
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="badge">HTML5</a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="badge">CSS3</a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="badge">JavaScript</a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer" class="badge">Responsive</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-info">
-                    <h3>Ayo berteman denganku C: </h3>
-                    <p>Kenalkan, aku paham kau tahu namaku. Aku adalah siswa Delayota(SMA Negeri 8 Yogyakarta) dan membuat ini di kelas 10. Aku pelajar biasa, manusia biasa, dan lain-lainnya, entahlah. Alien biasa? Bisa jadi? Who knows!!! Akupun punya beberapa hal yang ingin disampaikan :) </p>
-                    <p>Sebagai seorang pelajar, perlulah belajar. Aku sendiri punya beragam kesukaan dan interesting life choices yang membuatku sebagai 'diriku' hari ini. Apa saja? Mari kita lihat.!! AAAAAAAA</p>
-                    
-                    <ul class="feature-list">
-                        <li>I'm still a student</li>
-                        <li>Hobiku menggambar dan mencoba hal baru.</li>
-                        <li>Banyak orang menilaiku ambis, tetapi aku ga gigit koo :C </li>
-                        <li>Teman-temanku that I will love and loyal to those who does the same C:</li>
-                        <li>Aku sukaa bermain game dan mengikuti banyak fandom (sejak 2017)!!!!</li>
-                    </ul>
-                    
-                    <a href="#contact" class="cta-button">
-                        Beriku Pesan
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="stats-section">
-                <div class="stat-item">
-                    <div class="stat-number">2015</div>
-                    <div class="stat-label">Aktif Prestasi</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">Jawa</div>
-                    <div class="stat-label">Sejak lahir</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">Balikpapan</div>
-                    <div class="stat-label">Kota nan Jauh Orangtua</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">Lonely?</div>
-                    <div class="stat-label">100% ;-;</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="contact-content">
-            <div class="contact-header">
-                <h2>Ingin beri pesan?</h2>
-                <p>Silahkan kontak aku seapa-adanya :D</p>
-            </div>
-            
-            <div class="contact-container">
-                <div class="contact-info-section">
-                    <h3>Ayo berteman :></h3>
-                    <p>Aku disini untuk mencari teman, entah kenapa, xd. I can be your friend however :D </p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email?</h4>
-                                <p>kyleyisfine@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>No. Handphone?</h4>
-                                <p>+62 813 4833-2550</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Alamat?</h4>
-                                <p>Sleman, Jl.Palagan (get to know me better)!</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Kapan sibuk?</h4>
-                                <p>Monday - Friday: 7:00 AM - 5:00 PM WIB</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <h4>Follow Aku!!!</h4>
-                        <div class="social-buttons">
-                            <a href="#" class="social-btn" title="Instagram">
-                                <svg viewBox="0 0 24 24">
-                                    <a href="https://www.instagram.com/zafiyy_i/"></a>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form-section">
-                    <form class="contact-form" onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Nama panggilan mu!</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email mu? </label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Dengan kebutuhan apa?</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Berikan pesan!</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Kirimkan pesan!</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-copyright">
-                © 2025 dari 3D Coverflow. Terimakasih telah pengguna. | Di design oleh: <a href="https://templatemo.com" target="_blank" rel="noopener noreferrer">TemplateMo</a>
-            </div>
-            <div class="footer-links">
-                <a href="#privacy" onclick="event.preventDefault(); alert('Privacy Policy page would go here');">Kebijakan privasi.</a>
-                <a href="#terms" onclick="event.preventDefault(); alert('Terms of Service page would go here');">Ketentuan layanan.</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to top button -->
-    <div class="scroll-to-top" id="scrollToTop">
-        <span>↑</span>
+    <div class="wave-container">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+        <div class="wave wave-4"></div>
     </div>
 
-<script src="templatemo-3d-coverflow-scripts.js"></script>
-<script src="welcome. js"></script>
+    <div class="gradient-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="card-glow"></div>
+            <div class="login-header">
+                <div class="gradient-icon">
+                    <div class="icon-wave"></div>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h2>Welcome</h2>
+                <p>Sign in to continue your journey</p>
+            </div>
+            
+            <form class="login-form" id="loginForm" novalidate>
+                <div class="form-group">
+                    <div class="input-container">
+                        <div class="input-bg"></div>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder=" ">
+                        <label for="email">Email Address</label>
+                        <div class="input-wave"></div>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-container password-container">
+                        <div class="input-bg"></div>
+                        <input type="password" id="password" name="password" required autocomplete="current-password" placeholder=" ">
+                        <label for="password">Password</label>
+                        <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">
+                            <div class="toggle-bg"></div>
+                            <div class="toggle-icon">
+                                <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                                <svg class="eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+                                    <line x1="1" y1="1" x2="23" y2="23"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="input-wave"></div>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-options">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember" class="checkbox-label">
+                            <div class="gradient-checkbox">
+                                <div class="checkbox-bg"></div>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            Remember me
+                        </label>
+                    </div>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="gradient-button">
+                    <div class="button-bg"></div>
+                    <div class="button-content">
+                        <span class="btn-text">Sign In</span>
+                        <div class="btn-loader">
+                            <div class="loader-wave"></div>
+                            <div class="loader-wave"></div>
+                            <div class="loader-wave"></div>
+                        </div>
+                    </div>
+                    <div class="button-ripple"></div>
+                </button>
+            </form>
+
+            <div class="divider">
+                <div class="divider-line">
+                    <div class="line-gradient"></div>
+                </div>
+                <span>or continue with</span>
+                <div class="divider-line">
+                    <div class="line-gradient"></div>
+                </div>
+            </div>
+
+            <div class="social-login">
+                <button type="button" class="social-btn">
+                    <div class="social-bg google-bg"></div>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                </button>
+                <button type="button" class="social-btn">
+                    <div class="social-bg facebook-bg"></div>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </button>
+                <button type="button" class="social-btn">
+                    <div class="social-bg apple-bg"></div>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="signup-link">
+                <p>New to our platform? <a href="#">Create account</a></p>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-wave"></div>
+                <div class="success-content">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <h3>Welcome back!</h3>
+                    <p>Redirecting to your dashboard...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<form Id="loginForm">
+    <h3>Silahkan Login!!</h3>
+    <label for="username">Nama Pengguna</label>
+    <input type="text" id="username" placeholder="Nama Pengguna.." required="required">
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Password.." required="required">
+    <!-- <p id="message"></p> -->
+    <button type="submit" ></button>
+
+    <div class="social">
+        <div class="go"> <a href="register.html">DAFTAR </a></div>
+        <div class="kanan"><i class="fab fa-google"></i> Google</div>
+    </div>
+    <button onclick="location.href=' ../index.html' ;">Home</button>
+    <div id="alertBox" class="alert" style="display:none;"></div>
+</form>
+    
+    <script src="../../shared/js/form-utils.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
